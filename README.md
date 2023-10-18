@@ -27,8 +27,8 @@ Install PyTorch and other dependencies:
 ```
 conda create -n {env_name} python=3.8
 conda activate {env_name}
-conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch-lts -c nvidia
-pip install opencv-python torchgeometry Pillow tqdm tensorboardX scikit-image scipy
+pip3 install torch==1.13.1+cu116 torchvision==0.14.1+cu116 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu116
+pip3 install opencv-python torchgeometry Pillow tqdm tensorboardX scikit-image scipy numpy==1.20
 ```
 
 ## Dataset

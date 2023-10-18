@@ -156,7 +156,7 @@ def test(opt, test_loader, tocg, generator):
             input2 = torch.cat([input_parse_agnostic_down, densepose_down], 1)
 
             # forward
-            flow_list, fake_segmap, warped_cloth_paired, warped_clothmask_paired = tocg(opt,input1, input2)
+            flow_list, fake_segmap, warped_cloth_paired, warped_clothmask_paired = tocg(input1, input2)
             
             # warped cloth mask one hot
             if opt.cuda :
