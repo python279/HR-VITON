@@ -1,0 +1,7 @@
+version: '3'
+services:
+  infer_service:
+    image: harbor.uat.enflame.cc/library/enflame.cn/dense_pose:master
+    ports:
+      - "5003:5000"
+    restart: always
