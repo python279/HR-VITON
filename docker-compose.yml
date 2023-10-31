@@ -1,7 +1,8 @@
 version: '3'
 services:
   infer_service:
-    image: harbor.uat.enflame.cc/library/enflame.cn/dense_pose:master
+    image: harbor.uat.enflame.cc/library/enflame.cn/hr_viton:master
     ports:
-      - "5003:5000"
+      - "5006:5000"
     restart: always
+    shm_size: '4gb'
